@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux'
+import {BrowserRouter} from 'react-router-dom'
+import { createStore, combineReducers } from 'redux'
+import headerReducer from './component/contant/header/header-reducer'
+
+const rootReducers = combineReducers({
+  headerReducer :  headerReducer
+})
+const store = createStore(rootReducers)
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store = {store}>
+    <BrowserRouter>
     <App />
-  </React.StrictMode>,
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 

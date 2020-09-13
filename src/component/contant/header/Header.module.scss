@@ -1,0 +1,17 @@
+.Container{
+    display: flex;
+    background-color: black;
+    padding : 5px;
+    justify-content: space-between;
+    .Heading{
+        color: white;
+        font-size: 14px;
+        margin-left: 3em;
+    };
+    .Dropdown{
+        cursor: pointer;
+        color: white;
+        margin-right: 14em;
+    }
+    
+}

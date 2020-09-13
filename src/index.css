@@ -1,3 +1,8 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+body .p-menubar {
+  padding: 0px;
+}
+
+body .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link{
+  padding: 5px 10px;
+}
+
+body a{
+  color: white;
+}
+
+body a:hover{
+  color: white;
 }
