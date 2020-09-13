@@ -1,4 +1,7 @@
+// header reducer //
 import * as actionTypes from '../../../action-types'
+
+// set initial state//
 const initialState = {
     location: [
         {
@@ -59,6 +62,7 @@ const headerReducer = ((state = initialState, action) => {
         case actionTypes.FETCH_LOCATION:
             return state;
 
+// fetch category by branch //
         case actionTypes.FETCH_CATEGORY_BY_BRANCH:
             const temp = [...state.location]
             let updatedState
@@ -74,6 +78,7 @@ const headerReducer = ((state = initialState, action) => {
             })
             return updatedState;
 
+// fetch category by location //           
         case actionTypes.FETCH_CATEGORY_BY_LOCATION:
             const tempArray = [...state.location]
             let categoryArray = []
@@ -84,6 +89,8 @@ const headerReducer = ((state = initialState, action) => {
                     })
                 }
             })
+
+// to filter duplicate object//
             const categoryArrayList = []
             for (let y of categoryArray) {
                 let flag = 0
