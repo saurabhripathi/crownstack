@@ -5,8 +5,8 @@ class Home extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className={classes.Container}>
-                    <div className={classes.Wrapper}>
+                <div className = {classes.Container}>
+                    <div className = {classes.Wrapper}>
                         <p>
                             WELCOME TO
                     </p>
@@ -17,7 +17,7 @@ class Home extends Component {
 
                         </p>
                     </div>
-                    <div className={classes.Footer}>
+                    <div className = {classes.Footer}>
                         <p>
                             Please Select Location
                     </p>

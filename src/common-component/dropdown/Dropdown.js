@@ -7,10 +7,10 @@ const dropdown = (props) => {
       {menu.map((item, index) => {
          return (
             <SubMenu onTitleClick={props.subMenuClicked}
-               key={item.name}
-               title={item.name}>
+               key = {item.name}
+               title = {item.name}>
                {item.branches.map((item, index) => {
-                  return (<Menu.Item key={item.name}>{item.name}</Menu.Item>)
+                  return (<Menu.Item key = {item.name}>{item.name}</Menu.Item>)
                })}
             </SubMenu>
          )

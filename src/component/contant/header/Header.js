@@ -26,17 +26,16 @@ class Header extends Component {
     }
 
     render() {
-
         return (<React.Fragment>
-            <div className={classes.Container}>
-                <div className={classes.Heading}>
+            <div className = {classes.Container}>
+                <div className = {classes.Heading}>
                     RENTAL MANAGEMENT SYSTEM
             </div>
-                <div className={classes.Dropdown}>
+                <div className = {classes.Dropdown}>
                     <Dropdown
-                        menu={this.props.location}
-                        menuItemClicked={(event) => { return this.menuItemClickHandler(event) }}
-                        subMenuClicked={(event) => { return this.subMenuClickHandler(event) }}>
+                        menu = {this.props.location}
+                        menuItemClicked = {(event) => { return this.menuItemClickHandler(event) }}
+                        subMenuClicked = {(event) => { return this.subMenuClickHandler(event) }}>
                     </Dropdown>
                 </div>
             </div>

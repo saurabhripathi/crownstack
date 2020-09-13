@@ -17,15 +17,15 @@ class List extends Component {
         let card = selectedCategory.map((item, index) => {
             return <div className={classes.Card} key={item.name + index}>
                 <img alt="img"
-                    src={require(`../../assets/images/${item.image}`)}>
+                    src = {require(`../../assets/images/${item.image}`)}>
                 </img>
-                <Button clicked={() => { return this.clickHandlerFn(item.name) }} type="primary">{item.name}</Button>
+                <Button clicked = {() => { return this.clickHandlerFn(item.name) }} type="primary">{item.name}</Button>
             </div>
         })
 
         return (
             <React.Fragment>
-                <div className={classes.Container}>
+                <div className = {classes.Container}>
                     {card}
                 </div>
             </React.Fragment>

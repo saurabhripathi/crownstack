@@ -1,3 +1,5 @@
+// acton creaters//
+
 import * as actionTypes from '../../../action-types'
 
 export const fetchLocation = ()=>{

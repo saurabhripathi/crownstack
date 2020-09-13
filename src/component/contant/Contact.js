@@ -11,14 +11,14 @@ class Contant extends Component {
             <React.Fragment>
                 <Header />
                 <Switch>
-                    <Route path='/' exact
-                        component={Home}>
+                    <Route path = '/' exact
+                        component = {Home}>
                     </Route>
-                    <Route exact path='/category'
-                        component={List}>
+                    <Route exact path = '/category'
+                        component = {List}>
                     </Route>
-                    <Route path='/category/:id'
-                        component={SubList}>
+                    <Route path = '/category/:id'
+                        component = {SubList}>
                     </Route>
                 </Switch>
             </React.Fragment>
